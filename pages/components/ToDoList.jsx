@@ -1,5 +1,12 @@
-function ToDoList(props){
+export async function getStaticProps(){
+    return {
+        props: {
+            list: []
+        }
+    }
+}
 
+function ToDoList(props){
     return(
         <div className="todo-list">
             <ul>
